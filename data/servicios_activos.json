@@ -1,0 +1,232 @@
+[
+    {
+        "region": "Región Metropolitana",
+        "comuna": "Santiago",
+        "sector": "Providencia",
+        "nombre_servicio": "Barbería Don Juan",
+        "email_servicio": "contacto@barberiadonjuan.cl",
+        "numero_celular": "+569.98765432",
+        "contactar_por": [
+            {
+                "medio": "whatsapp",
+                "id": "+56998765432"
+            },
+            {
+                "medio": "instagram",
+                "id": "barberiadonjuan"
+            }
+        ],
+        "dia_hora_inicio": "2025-04-01T10:00",
+        "dia_hora_termino": "2025-04-01T13:00",
+        "descripcion": "Cortes de cabello y barba con estilo clásico y moderno.",
+        "tipo": "Barbería",
+        "fotos_servicio": [
+            "barberia1.jpg",
+            "barberia2.jpg"
+        ]
+    },
+    {
+        "region": "Región de Valparaíso",
+        "comuna": "Viña del Mar",
+        "sector": "Centro",
+        "nombre_servicio": "Clínica Dental Sonrisa Perfecta",
+        "email_servicio": "info@sonrisaperfecta.cl",
+        "numero_celular": "+569.87654321",
+        "contactar_por": [
+            {
+                "medio": "telegram",
+                "id": "sonrisaperfecta"
+            }
+        ],
+        "dia_hora_inicio": "2025-04-01T09:00",
+        "dia_hora_termino": "2025-04-01T12:00",
+        "descripcion": "Expertos en salud bucal con tecnología de punta.",
+        "tipo": "Atención Dental",
+        "fotos_servicio": [
+            "dental1.jpg"
+        ]
+    },
+    {
+        "region": "Región del Biobío",
+        "comuna": "Concepción",
+        "sector": "Barrio Universitario",
+        "nombre_servicio": "Kinesiología Vital",
+        "email_servicio": "contacto@kinesiologiavital.cl",
+        "numero_celular": "+569.76543210",
+        "contactar_por": [
+            {
+                "medio": "tiktok",
+                "id": "kinesiologiavital"
+            },
+            {
+                "medio": "otra",
+                "id": "www.kinesiologiavital.cl"
+            }
+        ],
+        "dia_hora_inicio": "2025-04-02T08:00",
+        "dia_hora_termino": "2025-04-02T11:00",
+        "descripcion": "Tratamientos personalizados para tu bienestar físico.",
+        "tipo": "Atención Kinesiológica",
+        "fotos_servicio": [
+            "kine1.jpg"
+        ]
+    },
+    {
+        "region": "Región de Tarapacá",
+        "comuna": "Iquique",
+        "sector": "Playa Brava",
+        "nombre_servicio": "Peluquería Estilo Único",
+        "email_servicio": "contacto@estilounico.cl",
+        "numero_celular": "+569.65432109",
+        "contactar_por": [
+            {
+                "medio": "whatsapp",
+                "id": "+56965432109"
+            }
+        ],
+        "dia_hora_inicio": "2025-04-02T10:00",
+        "dia_hora_termino": "2025-04-02T13:00",
+        "descripcion": "Cortes y peinados modernos para toda la familia.",
+        "tipo": "Peluquería",
+        "fotos_servicio": [
+            "peluqueria1.jpg"
+        ]
+    },
+    {
+        "region": "Región de Los Lagos",
+        "comuna": "Puerto Montt",
+        "sector": "Centro",
+        "nombre_servicio": "Spa Relajación Total",
+        "email_servicio": "contacto@sparelajacion.cl",
+        "numero_celular": "+569.54321098",
+        "contactar_por": [
+            {
+                "medio": "instagram",
+                "id": "sparelajacion"
+            }
+        ],
+        "dia_hora_inicio": "2025-04-03T09:00",
+        "dia_hora_termino": "2025-04-03T12:00",
+        "descripcion": "Masajes y terapias para el bienestar físico y mental.",
+        "tipo": "Spa",
+        "fotos_servicio": [
+            "spa1.jpg"
+        ]
+    },
+    {
+        "region": "Región de Coquimbo",
+        "comuna": "La Serena",
+        "sector": "Avenida del Mar",
+        "nombre_servicio": "Escuela de Surf Olas Perfectas",
+        "email_servicio": "info@olasperfectas.cl",
+        "numero_celular": "+569.43210987",
+        "contactar_por": [
+            {
+                "medio": "whatsapp",
+                "id": "+56943210987"
+            }
+        ],
+        "dia_hora_inicio": "2025-04-03T08:00",
+        "dia_hora_termino": "2025-04-03T11:00",
+        "descripcion": "Clases de surf para principiantes y avanzados.",
+        "tipo": "Deportes Acuáticos",
+        "fotos_servicio": [
+            "surf1.jpg"
+        ]
+    },
+    {
+        "region": "Región de Magallanes",
+        "comuna": "Punta Arenas",
+        "sector": "Costanera",
+        "nombre_servicio": "Tours Antárticos",
+        "email_servicio": "info@toursantarticos.cl",
+        "numero_celular": "+569.32109876",
+        "contactar_por": [
+            {
+                "medio": "telegram",
+                "id": "toursantarticos"
+            }
+        ],
+        "dia_hora_inicio": "2025-04-04T07:00",
+        "dia_hora_termino": "2025-04-04T19:00",
+        "descripcion": "Excursiones únicas a la Antártica.",
+        "tipo": "Turismo",
+        "fotos_servicio": [
+            "tour1.jpg",
+            "tour2.jpg"
+        ]
+    },
+    {
+        "region": "Región Metropolitana",
+        "comuna": "Las Condes",
+        "sector": "Manquehue",
+        "nombre_servicio": "Barbería El Caballero",
+        "email_servicio": "contacto@barberiaelcaballero.cl",
+        "numero_celular": "+569.12345678",
+        "contactar_por": [
+            {
+                "medio": "whatsapp",
+                "id": "+56912345678"
+            },
+            {
+                "medio": "facebook",
+                "id": "barberiaelcaballero"
+            }
+        ],
+        "dia_hora_inicio": "2025-04-05T09:00",
+        "dia_hora_termino": "2025-04-05T12:00",
+        "descripcion": "Barbería con un toque moderno y atención personalizada.",
+        "tipo": "Barbería",
+        "fotos_servicio": [
+            "barberia1.jpg",
+            "barberia2.jpg"
+        ]
+    },
+    {
+        "region": "Región de Los Ríos",
+        "comuna": "Valdivia",
+        "sector": "Centro",
+        "nombre_servicio": "Cine al Aire Libre",
+        "email_servicio": "contacto@cinealairelibre.cl",
+        "numero_celular": "+569.98765432",
+        "contactar_por": [
+            {
+                "medio": "whatsapp",
+                "id": "+56998765432"
+            },
+            {
+                "medio": "instagram",
+                "id": "cinealairelibre"
+            }
+        ],
+        "dia_hora_inicio": "2025-04-06T19:00",
+        "dia_hora_termino": "2025-04-06T22:00",
+        "descripcion": "Proyección de películas clásicas en un ambiente al aire libre.",
+        "tipo": "Entretenimiento",
+        "fotos_servicio": [
+            "cine1.jpg",
+            "cine2.jpg"
+        ]
+    },
+    {
+        "region": "Región de Arica y Parinacota",
+        "comuna": "Arica",
+        "sector": "Playa Chinchorro",
+        "nombre_servicio": "Restaurante Sabores del Norte",
+        "email_servicio": "contacto@saboresdelnorte.cl",
+        "numero_celular": "+569.21098765",
+        "contactar_por": [
+            {
+                "medio": "instagram",
+                "id": "saboresdelnorte"
+            }
+        ],
+        "dia_hora_inicio": "2025-04-04T12:00",
+        "dia_hora_termino": "2025-04-04T15:00",
+        "descripcion": "Gastronomía típica del norte de Chile.",
+        "tipo": "Restaurante",
+        "fotos_servicio": [
+            "restaurante1.jpg"
+        ]
+    }
+]

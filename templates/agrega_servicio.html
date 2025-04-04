@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agregar Servicio</title>
+    <link rel="stylesheet" href="../static/css/style.css">
+    <script src="/static/js/agrega_servicio.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Agregar servicio</h1>
+    </header>
+    
+    <form id="formulario-servicio" enctype="multipart/form-data">
+        <label for="region">Región:</label>
+        <select id="region" name="region" required>
+            <option value="">Seleccione una región</option>
+        </select>
+        <br>
+
+        <label for="comuna">Comuna:</label>
+        <select id="comuna" name="comuna" required>
+            <option value="">Seleccione una comuna</option>
+        </select>
+        <br>
+
+        <label for="sector">Sector:</label>
+        <input type="text" id="sector" name="sector" maxlength="100">
+        <br>
+
+        <label for="nombre_servicio">Nombre del Servicio:</label>
+        <input type="text" id="nombre_servicio" name="nombre_servicio" maxlength="200" required>
+        <br>
+
+        <label for="email_servicio">Email del Servicio:</label>
+        <input type="email" id="email_servicio" name="email_servicio" maxlength="100" required>
+        <br>
+
+        <label for="numero_celular">Número de Celular:</label>
+        <input type="tel" id="numero_celular" name="numero_celular" pattern="\+[\d]{3}\.[\d]{8}" placeholder="+569.12345678">
+        <br>
+
+        <label for="contactar_por">Contactar por:</label>
+        <select id="contactar_por" name="contactar_por">
+            <option value="">Seleccione una opción</option>
+            <option value="whatsapp">WhatsApp</option>
+            <option value="telegram">Telegram</option>
+            <option value="x">X</option>
+            <option value="instagram">Instagram</option>
+            <option value="tiktok">TikTok</option>
+            <option value="otra">Otra</option>
+        </select>
+        <input type="text" id="contacto_id" name="contacto_id" class="hidden" minlength="4" maxlength="50" placeholder="ID o URL de contacto">
+        <br>
+
+        <label for="dia_hora_inicio">Día Hora Inicio:</label>
+        <input type="datetime-local" id="dia_hora_inicio" name="dia_hora_inicio" required>
+        <br>
+
+        <label for="dia_hora_termino">Día Hora Término:</label>
+        <input type="datetime-local" id="dia_hora_termino" name="dia_hora_termino">
+        <br>
+
+        <label for="descripcion">Descripción:</label>
+        <textarea id="descripcion" name="descripcion" cols="50" rows="10"></textarea>
+        <br>
+
+        <label for="tipo">Tipo:</label>
+        <select id="tipo" name="tipo" required>
+            <option value="">Seleccione un tipo</option>
+            <option value="peluqueria">Peluquería</option>
+            <option value="barberia">Barbería</option>
+            <option value="atencion_dental">Atención Dental</option>
+            <option value="atencion_kinesiologica">Atención Kinesiológica</option>
+            <option value="otro">Otro</option>
+        </select>
+        <input type="text" id="tipo_otro" name="tipo_otro" class="hidden" minlength="3" maxlength="15" placeholder="Especifique el tipo">
+        <br>
+
+        <label for="fotos_servicio">Fotos del Servicio:</label>
+        <div id="fotos-container">
+            <input type="file" id="fotos_servicio" name="fotos_servicio[]" accept="image/*" required>
+        </div>
+        <button type="button" id="agregar-foto">Agregar otra foto</button>
+        <br>
+
+        <button type="submit" id="agregar-actividad">Agregar esta actividad</button>
+    </form>
+    <button onclick="window.location.href='/templates/index.html'">No guardar y volver a la portada</button>
+</body>
+</html>
