@@ -1,14 +1,14 @@
-## desarrollo_web_jaime_navarro
+# desarrollo_web_jaime_navarro
 Repositorio para el curso CC5002 Desarrollo de Aplicaciones Web
 
-## Desarrollo de Tarea 1:
+# Desarrollo de Tarea 1:
 
-# Live Server
+## Live Server
 
 La manera más rápida y sencilla de lanzar un servidor locar para visualizar la tarea es usar la extensión de vscode `live server` : https://marketplace.visualstudio.com/items/?itemName=ritwickdey.LiveServer. La tarea fue desarrollada gracias a esta extensión.
 
 
-# Alternativa: Servidor HTTP simple con Python
+## Alternativa: Servidor HTTP simple con Python
 
 El módulo `http.server` de Python 3 para levantar un servidor HTTP básico y mostrar archivos HTML desde el directorio `templates`.
 
@@ -18,8 +18,9 @@ Este se ejecuta con:
 python3 -m http.server 8000
 ```
 
-# La estructura del proyecto
+## La estructura del proyecto
 
+```bash
 desarrollo_web_jaime_navarro/
 ├── data/
 │   ├── servicios_activos.json       # Archivo JSON con los datos ficticios de los servicios
@@ -48,3 +49,4 @@ desarrollo_web_jaime_navarro/
 │   └── (otras vistas sin uso de momento)
 │
 └── README.md                        # Archivo README con la descripción del proyecto
+```
