@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agenda Virtual - Inicio</title>
+    <link rel="stylesheet" href="../static/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <script src="../static/js/index.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Agenda Virtual</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="register.html">Registrarse</a></li>
+                <li><a href="login.html">Iniciar Sesión</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section class="intro">
+            <h2>Reserva tu cita fácilmente</h2>
+            <p>Encuentra servicios en tu región y agenda una cita de manera rápida y sencilla.</p>
+            <a href="agrega_servicio.html" class="btn">Agrega tu Servicio</a>
+            <a href="servicios.html" class="btn">Ver listado de servicios</a>
+            <a href="estadisticas.html" class="btn">Ver estadísticas</a>
+        </section>
+
+        <section class="ultimos-servicios">
+            <h2>Últimos Servicios</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Inicio</th>
+                        <th>Término</th>
+                        <th>Comuna</th>
+                        <th>Sector</th>
+                        <th>Tipo</th>
+                        <th>Foto</th>
+                    </tr>
+                </thead>
+                <tbody id="servicios-lista">
+                    
+                </tbody>
+            </table>
+        </section>
+    </main>
+    
+    <footer>
+        <p>2024 Agenda Virtual. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>

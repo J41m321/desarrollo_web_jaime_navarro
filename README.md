@@ -1,9 +1,9 @@
 # desarrollo_web_jaime_navarro
 Repositorio para el curso CC5002 Desarrollo de Aplicaciones Web
 
-## Desarrollo Tarea 2: Flask y MySQL
+# Desarrollo Tarea 2: Flask y MySQL
 
-# Preparación del ambiente de desarrollo
+## Preparación del ambiente de desarrollo
 
 * Creamos un entorno virtual:
 
@@ -23,7 +23,7 @@ venv\Scripts\activate
 pip install flask
 ```
 
-# Ejecutar la aplicación
+## Ejecutar la aplicación
 
 * para ejecutar la aplicación:
 
