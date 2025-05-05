@@ -5,6 +5,13 @@ Repositorio para el curso CC5002 Desarrollo de Aplicaciones Web
 
 ## Preparación del ambiente de desarrollo
 
+* Creamos una carpeta para el proyecto de Flask y nos movemos a ella:
+
+```bash
+mkdir flask_project
+cd flask_project
+```
+
 * Creamos un entorno virtual:
 
 ```bash
@@ -17,10 +24,10 @@ python -m venv venv
 venv\Scripts\activate
 ```
 
-* instalamos flask:
+* instalamos los requerimientos (flask, SQLAlchemy):
 
 ```bash
-pip install flask
+pip install -r requirements.txt
 ```
 
 ## Ejecutar la aplicación
@@ -28,7 +35,7 @@ pip install flask
 * para ejecutar la aplicación:
 
 ```bash
-python app.py
+python run.py
 ```
 
 * abrir el url http://127.0.0.1:5000 para ver la app
