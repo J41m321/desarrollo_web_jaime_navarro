@@ -9,10 +9,13 @@ main = Blueprint('main', __name__)
 def home():
     return render_template('index.html')
 
-@main.route('/servicios')
+@main.route('/servicios', methods=['GET'])
 def servicios():
-    servicios = Servicio.query.all()
-    return render_template('servicios.html', servicios=servicios)
+    return render_template('servicios.html')
+
+@main.route('/detalle_servicio', methods=['GET'])
+def detalle_servicio():
+    return render_template('detalle_servicio.html')
 
 @main.route('/estadisticas')
 def estadisticas():

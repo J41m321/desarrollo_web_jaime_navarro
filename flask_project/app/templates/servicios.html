@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Servicios</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <script src="{{ url_for('static', filename='js/servicios.js') }}" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Lista de Servicios</h1>
+        <nav>
+            <ul>
+                <li><a href="{{ url_for('main.home') }}">Inicio</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="services-container">
+            <h2>Servicios Disponibles</h2>
+            <div id="services-list"></div>
+        </section>
+        <section id="pagination-container"></section>
+    </main>
+    
+    <footer>
+        <p>2024 Agenda Virtual. Todos los derechos reservados.</p>
+    </footer> 
+</body>
+</html>

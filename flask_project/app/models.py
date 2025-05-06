@@ -4,13 +4,14 @@ class Region(db.Model):
     __tablename__ = 'region'
     id = db.Column(db.Integer, primary_key=True)
     nombre = db.Column(db.String(200), nullable=False)
-    comunas = db.relationship('Comuna', backref='region', lazy=True)
+    comunas = db.relationship('Comuna', backref='region_data', lazy=True)
 
 class Comuna(db.Model):
     __tablename__ = 'comuna'
     id = db.Column(db.Integer, primary_key=True)
     nombre = db.Column(db.String(200), nullable=False)
     region_id = db.Column(db.Integer, db.ForeignKey('region.id'), nullable=False)
+    region = db.relationship('Region', backref='region_comunas')
 
 class Servicio(db.Model):
     __tablename__ = 'servicio'
