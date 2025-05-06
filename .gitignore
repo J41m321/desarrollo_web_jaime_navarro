@@ -1,2 +1,8 @@
 log.txt
 static/images/
+__pycache__/
+*.pyc
+flask_project/app/__pycache__/__init__.cpython-313.pyc
+flask_project/app/__pycache__/api.cpython-313.pyc
+flask_project/app/__pycache__/models.cpython-313.pyc
+flask_project/app/__pycache__/routes.cpython-313.pyc
