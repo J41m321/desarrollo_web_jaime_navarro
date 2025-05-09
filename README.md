@@ -39,3 +39,22 @@ python run.py
 ```
 
 * abrir el url http://127.0.0.1:5000 para ver la app
+
+## Estructura del repositorio
+
+```
+desarrollo_web_jaime_navarro/
+│
+├── flask_project/          # Carpeta principal del proyecto Flask
+│   ├── run.py              # Archivo principal para ejecutar la aplicación
+│   ├── requirements.txt    # Dependencias del proyecto
+│   ├── static/             # CSS, JS, imágenes
+│   ├── templates/          # Plantillas HTML
+│   ├── app/                # Código fuente de la aplicación
+│       ├── __init__.py     # Inicialización del paquete Flask
+│       ├── models.py       # Modelos de la base de datos
+│       ├── routes.py       # Rutas de la aplicación
+│       ├── config.py       # Configuración de la aplicación
+│
+├── README.md               # Archivo README con la descripción del proyecto
+```
