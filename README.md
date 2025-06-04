@@ -1,16 +1,9 @@
 # desarrollo_web_jaime_navarro
 Repositorio para el curso CC5002 Desarrollo de Aplicaciones Web
 
-# Desarrollo Tarea 2: Flask y MySQL
+# Desarrollo Tarea 3: AJAX
 
 ## Preparación del ambiente de desarrollo
-
-* Creamos una carpeta para el proyecto de Flask y nos movemos a ella:
-
-```bash
-mkdir flask_project
-cd flask_project
-```
 
 * Creamos un entorno virtual:
 

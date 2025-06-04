@@ -1,5 +1,5 @@
 from flask import Blueprint, jsonify, request
-from .models import Servicio, Region, Comuna, ServicioTipo
+from .models import Servicio, Region, Comuna, ServicioTipo, Comentario, db
 from sqlalchemy import func
 from datetime import datetime
 
@@ -152,3 +152,39 @@ def estadisticas_horarios():
     mediodia = [conteo[m].get('mediodia', 0) for m in meses]
     tarde = [conteo[m].get('tarde', 0) for m in meses]
     return jsonify({'meses': meses, 'manana': manana, 'mediodia': mediodia, 'tarde': tarde})
+
+@api.route('/api/comentarios/<int:servicio_id>', methods=['GET'])
+def obtener_comentarios(servicio_id):
+    comentarios = Comentario.query.filter_by(servicio_id=servicio_id).order_by(Comentario.fecha.desc()).all()
+    data = [
+        {
+            'nombre': c.nombre,
+            'texto': c.texto,
+            'fecha': c.fecha.strftime('%Y-%m-%d %H:%M')
+        }
+        for c in comentarios
+    ]
+    return jsonify(data)
+
+@api.route('/api/comentarios/<int:servicio_id>', methods=['POST'])
+def agregar_comentario(servicio_id):
+    data = request.get_json()
+    nombre = data.get('nombre', '').strip()
+    texto = data.get('texto', '').strip()
+    errores = []
+    if not (3 <= len(nombre) <= 80):
+        errores.append("El nombre debe tener entre 3 y 80 caracteres.")
+    if not (len(texto) >= 5):
+        errores.append("El comentario debe tener al menos 5 caracteres.")
+    if errores:
+        return jsonify({'ok': False, 'errores': errores}), 400
+
+    comentario = Comentario(
+        nombre=nombre,
+        texto=texto,
+        fecha=datetime.now(),
+        servicio_id=servicio_id
+    )
+    db.session.add(comentario)
+    db.session.commit()
+    return jsonify({'ok': True})

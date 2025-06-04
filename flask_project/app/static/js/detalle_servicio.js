@@ -43,4 +43,63 @@ document.addEventListener("DOMContentLoaded", () => {
             console.error("Error cargando el detalle del servicio:", error);
             detalleServicio.innerHTML = "<p>Error al cargar el detalle del servicio.</p>";
         });
+
+    const comentariosList = document.getElementById("lista-comentarios");
+    const formComentario = document.getElementById("form-comentario");
+    const erroresDiv = document.getElementById("comentario-errores");
+
+    function cargarComentarios() {
+        fetch(`/api/comentarios/${servicioId}`)
+            .then(res => res.json())
+            .then(data => {
+                comentariosList.innerHTML = "";
+                if (data.length === 0) {
+                    comentariosList.innerHTML = "<li>No hay comentarios aún.</li>";
+                } else {
+                    data.forEach(c => {
+                        const li = document.createElement("li");
+                        li.innerHTML = `<strong>${c.nombre}</strong> (${c.fecha}):<br>${c.texto}`;
+                        comentariosList.appendChild(li);
+                    });
+                }
+            });
+    }
+
+    formComentario.addEventListener("submit", function(e) {
+        e.preventDefault();
+        erroresDiv.textContent = "";
+        const nombre = document.getElementById("nombre-comentario").value.trim();
+        const texto = document.getElementById("texto-comentario").value.trim();
+
+        let errores = [];
+        if (nombre.length < 3 || nombre.length > 80) {
+            errores.push("El nombre debe tener entre 3 y 80 caracteres.");
+        }
+        if (texto.length < 5) {
+            errores.push("El comentario debe tener al menos 5 caracteres.");
+        }
+        if (errores.length > 0) {
+            erroresDiv.textContent = errores.join(" ");
+            return;
+        }
+
+        fetch(`/api/comentarios/${servicioId}`, {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({ nombre, texto })
+        })
+        .then(res => res.json().then(data => ({status: res.status, body: data})))
+        .then(({status, body}) => {
+            if (!body.ok) {
+                erroresDiv.textContent = (body.errores || ["Error al agregar comentario"]).join(" ");
+            } else {
+                formComentario.reset();
+                cargarComentarios();
+            }
+        });
+    });
+
+    if (servicioId) {
+        cargarComentarios();
+    }
 });

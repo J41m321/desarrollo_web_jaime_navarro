@@ -12,10 +12,24 @@
     <main>
         <section id="agranda-imagen" hidden="true">
             <button id="cerrar-imagen">Cerrar</button>
-            
         </section>
         <section id="detalle-servicio">
 
+        </section>
+        <section id="comentarios">
+            <h3>Comentarios</h3>
+            <ul id="lista-comentarios"></ul>
+            <form id="form-comentario">
+                <label for="nombre-comentario">Nombre:</label>
+                <input type="text" id="nombre-comentario" name="nombre" minlength="3" maxlength="80" required>
+                <br>
+                <label for="texto-comentario">Comentario:</label>
+                <textarea id="texto-comentario" name="texto" rows="4" cols="50" minlength="5" required></textarea>
+                <br>
+                <button type="submit">Agregar comentario</button>
+                <div id="comentario-errores"></div>
+            </form>
+            
         </section>
 
         <nav>
