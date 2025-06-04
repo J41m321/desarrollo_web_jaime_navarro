@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estadísticas de Servicios</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="{{ url_for('static', filename='js/estadisticas.js') }}" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Estadísticas de Servicios</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Cantidad de servicios por día</h2>
+            <canvas id="grafico-lineas" class="grafico"></canvas>
+        </section>
+        <section>
+            <h2>Total de servicios por tipo</h2>
+            <canvas id="grafico-torta" class="grafico"></canvas>
+        </section>
+        <section>
+            <h2>Servicios por mes y horario</h2>
+            <canvas id="grafico-barras" class="grafico"></canvas>
+        </section>
+        <a href="/" class="btn">Volver a la portada</a>
+    </main>
+</body>
+</html>
